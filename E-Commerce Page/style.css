@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -57,22 +56,56 @@ body {
     right: 0;
 }
 
-/* HERO SECTION */
-.hero {
-    background: url('https://via.placeholder.com/1200x400?text=Latest+Electronics') no-repeat center;
-    background-size: cover;
-    height: 400px;
+.coupon-section {
+    background-color: #0044ffaf;
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hero h2 {
-    background-color: rgba(0,0,0,0.6);
-    color: white;
-    padding: 25px 50px;
-    font-size: 36px;
-    border-radius: 12px;
+
+.coupon {
+    background-color: #FFEB3B;
+    width: 500px;
+    max-width: 90%;
+    padding: 40px;
+    border-radius: 15px;
     text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border: 3px dashed #F57F17;
+}
+
+.coupon h2 {
+    color: #BF360C;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.discount {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.discount span {
+    color: #D32F2F;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.code {
+    background-color: #F57F17;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    letter-spacing: 2px;
+}
+
+.valid {
+    color: #5D4037;
+    font-size: 14px;
 }
 
 .products {
@@ -127,7 +160,6 @@ body {
     background-color: #0b7dda;
 }
 
-/* MODAL USING :TARGET */
 .modal {
     display: none;
     position: fixed;
@@ -206,14 +238,48 @@ body {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #212121;
+.footer {
+    background-color: #000000;
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 50px 20px 20px;
 }
-footer a {
-    color: #FFD700;
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.footer-section a {
+    display: block;
+    color: #FFD54F;
     text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #3949AB;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #ccc;
 }
